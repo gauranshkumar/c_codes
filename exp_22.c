@@ -1,20 +1,41 @@
-#include<stdio.h>
+#include <stdio.h>
 
-int fact(int num)
+void bubble_sort(int arr[], int size)
 {
-    if (num <= 1)
+    int i,j,temp;
+    for(i=0;i<size-1;i++)
     {
-        return 1;
+        for(j=i+1;j<size;j++)
+        {
+            if(arr[i]>arr[j])
+            {
+                temp = arr[i];
+                arr[i]=arr[j];
+                arr[j]=temp;
+            }
+        }
     }
-
-    return num*fact(num-1);
-    num--;
-    
-
 }
 
 void main()
 {
-    printf("%d\n\n", fact(10));
+    int   i, size;
+    printf("\nEnter The Size Of Array : ");
+    scanf("%d",&size);
+    int arr[size];
+    printf("Enter the values : \n");
+    for(i=0;i<size;i++)
+    {
+        scanf("%d",&arr[i]);
+    }
+
+    bubble_sort(arr, size);
+
+    printf("\n\nAfter Sort : \n");
+    for(i=0;i<size;i++)
+    {
+        printf("%d \t",arr[i]);
+    }
+    printf("\n\n");
 
 }
