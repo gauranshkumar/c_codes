@@ -5,13 +5,13 @@ void bubble_sort(int arr[], int size)
     int i,j,temp;
     for(i=0;i<size-1;i++)
     {
-        for(j=i+1;j<size;j++)
+        for(j=0;j<size-i-1;j++)
         {
-            if(arr[i]>arr[j])
+            if(arr[j]>arr[j+1])
             {
-                temp = arr[i];
-                arr[i]=arr[j];
-                arr[j]=temp;
+                temp = arr[j];
+                arr[j]=arr[j+1];
+                arr[j+1]=temp;
             }
         }
     }
