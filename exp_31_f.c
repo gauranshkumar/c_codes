@@ -1,5 +1,5 @@
 /*
- * C Program to Implement a Doubly Linked List & provide Insertion, Deletion & Display Operations
+ * C Program to Implement a Doubly Linked List
  */
 #include <stdio.h>
 #include <stdlib.h>

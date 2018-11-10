@@ -1,3 +1,6 @@
+/* 
+A Program for linear and binary Search
+ */
 #include <stdio.h>
 
 void insertion_sort(int arr[], int n)

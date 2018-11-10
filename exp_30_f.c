@@ -1,6 +1,6 @@
 /*
 
-     * C Program to Demonstrate Circular Single Linked List
+     * C Program to Implement Circular Linked List
 
      */
 
